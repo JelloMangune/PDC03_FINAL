@@ -2,17 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FinalExam.View.ListAnimal"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="True">
     <ContentPage.Content>
         <StackLayout>
-            <Image Margin="0, -125, 0, 0"
-                   Source="bg1.png"
+            <Image Margin="0, -138, 0, 0"
+                   Source="bg2.png"
                    HeightRequest="450"
                    WidthRequest="450"
                    VerticalOptions="Start"
                    HorizontalOptions="Start"/>
             
-                <Button Margin="300, -120, 0, 0"
+                <Button Margin="250, -120, 0, 0"
                         Text="ADD ANIMAL"
                         TextColor="White"
                         FontAttributes="Bold"
@@ -27,7 +27,7 @@
                 </Button>
 
             <AbsoluteLayout>
-                <Image Margin="-50, -40, 0, 0"
+                <Image Margin="-80, -40, 0, 0"
                    WidthRequest="400"
                    HorizontalOptions="Center"
                    Source="list2.png"/>
@@ -37,13 +37,19 @@
                       Margin="10, 7, 10, 0">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell ImageSource="eagle.jpg"
+                        <ImageCell ImageSource="{Binding Image}"
                                    Text="{Binding AnimalCode}"
-                                   Detail="{Binding Habitat}"
+                                   Detail="{Binding Species}"
                                    TextColor="Black"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Image Margin="0, 0, 0, 0"
+                   Source="footer1.png"
+                   HeightRequest="50"
+                   WidthRequest="450"
+                   VerticalOptions="End"
+                   HorizontalOptions="Start"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

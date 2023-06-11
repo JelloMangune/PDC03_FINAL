@@ -12,6 +12,7 @@ namespace FinalExam.Model
         public string Species { get; set; }
         public string Habitat { get; set; }
         public string Threat { get; set; }
+        public string Image { get; set; }
     }
 
 }

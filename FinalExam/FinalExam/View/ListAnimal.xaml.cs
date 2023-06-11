@@ -49,7 +49,7 @@ namespace FinalExam.View
                 switch (res)
                 {
                     case "Show":
-                        await this.Navigation.PushAsync(new AddAnimal(obj));
+                        await this.Navigation.PushAsync(new ViewAnimal(obj));
                         break;
 
                     case "Update":
@@ -62,6 +62,13 @@ namespace FinalExam.View
                         break;
                 }
             }
+
+            if (e.SelectedItem == null)
+                return;
+
+            // Deselect the item
+            AnimalListView.SelectedItem = null;
         }
+
     }
 }

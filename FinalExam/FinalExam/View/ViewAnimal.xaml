@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExam.View.ViewAnimal"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Margin="0, -138, 0, 0"
+                   x:Name="imgAnimal"
+                   HeightRequest="450"
+                   WidthRequest="450"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Start"/>
+            <Image Margin="17, -100, 0, 0"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"
+                   Source="information.png"/>
+            <Grid Margin="15, 10, 0, 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".8*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="Animal Code:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblAnimalCode" Text="Animal Code" FontSize="16" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Characteristics:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+                <Label Grid.Row="1" Grid.Column="1" x:Name="lblCharacteristics" Text="Characteristics" FontSize="16" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Species:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+                <Label Grid.Row="2" Grid.Column="1" x:Name="lblSpecies" Text="Species" FontSize="16" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Habitat:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+                <Label Grid.Row="3" Grid.Column="1" x:Name="lblHabitat" Text="Habitat" FontSize="16" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+
+                <Label Grid.Row="4" Grid.Column="0" Text="Threat:" FontAttributes="Bold" FontSize="20" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+                <Label Grid.Row="4" Grid.Column="1" x:Name="lblThreat" Text="Threat" FontSize="16" VerticalOptions="Center" Margin="0, 15, 0, 0"/>
+            </Grid>
+
+            <AbsoluteLayout>
+                <Button Margin="220, 50, 0, 0"
+                    Text="BACK"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="12"
+                    HorizontalOptions="Center"
+                    WidthRequest="100"
+                    HeightRequest="35"
+                    CornerRadius="25"
+                    BackgroundColor="White"
+                    Clicked="Back">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,0">
+                            <GradientStop Color="#B28E5D" Offset="0.1" />
+                            <GradientStop Color="#AD8650" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -9,7 +9,7 @@
                    HeightRequest="650"
                    WidthRequest="650"
                    VerticalOptions="CenterAndExpand"/>
-            <AbsoluteLayout Margin="135, -60, 30, 50">
+            <AbsoluteLayout Margin="115, -40, 30, 50">
                 <Button Text="Explore Now"
                         TextColor="White"
                         FontAttributes="Bold"

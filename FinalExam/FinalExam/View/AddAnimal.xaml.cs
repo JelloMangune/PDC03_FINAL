@@ -9,6 +9,9 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using FinalExam.ViewModel;
+using Xamarin.Essentials;
+
+using System.IO;
 
 namespace FinalExam.View
 {
@@ -18,7 +21,7 @@ namespace FinalExam.View
         AnimalViewModel _viewModel;
         bool _isUpdate;
         int animalID;
- 
+        string imageDirectory;
 
 
         public AddAnimal()
@@ -41,6 +44,12 @@ namespace FinalExam.View
                 txtHabitat.Text = obj.Habitat;
                 txtThreat.Text = obj.Threat;
                 _isUpdate = true;
+
+                if (!string.IsNullOrEmpty(obj.Image))
+                {
+                    imageDirectory = obj.Image;
+                    imgAnimal.Source = ImageSource.FromFile(Path.Combine(App.ImageFolderPath, obj.Image));
+                }
             }
         }
 
@@ -55,6 +64,7 @@ namespace FinalExam.View
             obj.Species = txtSpecies.Text;
             obj.Habitat = txtHabitat.Text;
             obj.Threat = txtThreat.Text;
+            obj.Image = imageDirectory;
 
             if (_isUpdate)
             {
@@ -71,7 +81,44 @@ namespace FinalExam.View
 
         private async void Back(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListAnimal());
+            await Navigation.PopAsync();
+        }
+        private async void BtnUploadImage_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var mediaOptions = new MediaPickerOptions
+                {
+                    Title = "Select Animal Image"
+                };
+
+                var selectedImageFile = await MediaPicker.PickPhotoAsync(mediaOptions);
+
+                if (selectedImageFile != null)
+                {
+                    // Set the image source of the Image control
+                    imgAnimal.Source = ImageSource.FromStream(() => selectedImageFile.OpenReadAsync().Result);
+
+                    // Save the image file to the app's local storage
+                    string fileName = Path.GetFileName(selectedImageFile.FileName);
+                    string destinationPath = Path.Combine(App.ImageFolderPath, fileName);
+
+                    using (var stream = await selectedImageFile.OpenReadAsync())
+                    {
+                        using (var fileStream = File.Create(destinationPath))
+                        {
+                            await stream.CopyToAsync(fileStream);
+                        }
+                    }
+
+                    // Save the image directory in the model
+                    imageDirectory = Path.Combine(App.ImageFolderPath, fileName);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception: {ex.Message}");
+            }
         }
     }
 }

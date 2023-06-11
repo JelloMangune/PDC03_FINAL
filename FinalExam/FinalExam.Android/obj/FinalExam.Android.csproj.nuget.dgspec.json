@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj": {}
+    "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj": {
+    "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj",
+        "projectUniqueName": "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj",
         "projectName": "FinalExam.Android",
-        "projectPath": "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj",
-        "packagesPath": "C:\\Users\\User003\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam.Android\\obj\\",
+        "projectPath": "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam.Android\\FinalExam.Android.csproj",
+        "packagesPath": "C:\\Users\\russ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User003\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\russ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam\\FinalExam.csproj": {
-                "projectPath": "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam\\FinalExam.csproj"
+              "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam\\FinalExam.csproj": {
+                "projectPath": "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam\\FinalExam.csproj"
               }
             }
           }
@@ -54,20 +54,20 @@
         }
       }
     },
-    "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam\\FinalExam.csproj": {
+    "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam\\FinalExam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam\\FinalExam.csproj",
+        "projectUniqueName": "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam\\FinalExam.csproj",
         "projectName": "FinalExam",
-        "projectPath": "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam\\FinalExam.csproj",
-        "packagesPath": "C:\\Users\\User003\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User003\\source\\repos\\PDC03_FinalExam-main\\FinalExam\\FinalExam\\obj\\",
+        "projectPath": "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam\\FinalExam.csproj",
+        "packagesPath": "C:\\Users\\russ\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\russ\\source\\repos\\PDC03_Finals\\FinalExam\\FinalExam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\User003\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\russ\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -128,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
