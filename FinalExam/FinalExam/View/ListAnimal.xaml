@@ -34,16 +34,19 @@
             </AbsoluteLayout>
             <ListView x:Name ="AnimalListView"
                       ItemSelected="AnimalListView_ItemSelected"
-                      Margin="10, 7, 10, 0">
+                      Margin="10, 7, 10, 0"
+                      >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ImageCell ImageSource="{Binding Image}"
                                    Text="{Binding AnimalCode}"
                                    Detail="{Binding Species}"
-                                   TextColor="Black"/>
+                                   TextColor="Black"
+                                   />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+
             <Image Margin="0, 0, 0, 0"
                    Source="footer1.png"
                    HeightRequest="50"

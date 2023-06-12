@@ -44,31 +44,43 @@ namespace FinalExam.View
             if (e.SelectedItem != null)
             {
                 Animal obj = (Animal)e.SelectedItem;
-                string res = await DisplayActionSheet("Operation", "Cancel", null, "Show", "Update", "Delete");
 
-                switch (res)
+
+                var popupPage = new CustomPopupPage();
+                await Navigation.PushModalAsync(popupPage);
+
+                MessagingCenter.Subscribe<CustomPopupPage, string>(this, "OptionSelected", async (page, selectedOption) =>
                 {
-                    case "Show":
-                        await this.Navigation.PushAsync(new ViewAnimal(obj));
-                        break;
-
-                    case "Update":
+                    if (selectedOption == "Update")
+                    {
                         await this.Navigation.PushAsync(new AddAnimal(obj));
-                        break;
-
-                    case "Delete":
+                    }
+                    else if (selectedOption == "Show")
+                    {
+                        await this.Navigation.PushAsync(new ViewAnimal(obj));
+                    }
+                    else if (selectedOption == "Delete")
+                    {
                         viewModel.DeleteAnimal(obj);
                         showAnimal();
-                        break;
-                }
+                    }
+                    else if (selectedOption == "Cancel")
+                    {
+                        showAnimal();
+                    }
+
+                    AnimalListView.SelectedItem = null;
+                    MessagingCenter.Unsubscribe<CustomPopupPage, string>(this, "OptionSelected");
+                });
+
+
+                if (e.SelectedItem == null)
+                    return;
+
+                // Deselect the item
+                AnimalListView.SelectedItem = null;
             }
 
-            if (e.SelectedItem == null)
-                return;
-
-            // Deselect the item
-            AnimalListView.SelectedItem = null;
         }
-
     }
 }

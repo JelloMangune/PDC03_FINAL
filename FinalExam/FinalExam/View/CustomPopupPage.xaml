@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinalExam.View.CustomPopupPage"
+             BackgroundColor="Transparent">
+    <Frame x:Name="popupFrame"
+           Padding="20"
+           BackgroundColor="White"
+           CornerRadius="10"
+           HasShadow="true"
+           HorizontalOptions="Center"
+           VerticalOptions="Center">
+        <StackLayout>
+            <Label Text="ACTION SELECTIONS"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+            <Button x:Name="showButton"
+                    Text="Show"
+                    Clicked="ShowButton_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="0,5"
+                    BackgroundColor="#D7B07B"
+                    TextColor="White"
+                    BorderRadius="10" />
+            <Button x:Name="updateButton"
+                    Text="Update"
+                    Clicked="UpdateButton_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    Margin="0,5"
+                    BackgroundColor="#D7B07B"
+                    TextColor="White"
+                    BorderRadius="10" />
+            <Button x:Name="deleteButton"
+                    Text="Delete"
+                    Clicked="DeleteButton_Clicked"
+                    HorizontalOptions="FillAndExpand" 
+                    Margin="0,5"
+                    BackgroundColor="#D7B07B"
+                    TextColor="White"
+                    BorderRadius="10" />
+            <Button x:Name="cancelButton"
+                    Text="Cancel"
+                    Clicked="CancelButton_Clicked"
+                    HorizontalOptions="FillAndExpand" 
+                    Margin="0,5"
+                    BorderRadius="10" />
+        </StackLayout>
+    </Frame>
+</ContentPage>

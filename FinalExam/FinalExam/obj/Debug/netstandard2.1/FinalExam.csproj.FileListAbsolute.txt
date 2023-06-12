@@ -71,3 +71,4 @@ C:\Users\russ\source\repos\PDC03_Finals\FinalExam\FinalExam\bin\Debug\netstandar
 C:\Users\russ\source\repos\PDC03_Finals\FinalExam\FinalExam\bin\Debug\netstandard2.1\FinalExam.pdb
 C:\Users\russ\source\repos\PDC03_Finals\FinalExam\FinalExam\obj\Debug\netstandard2.1\XamlC.stamp
 C:\Users\russ\source\repos\PDC03_Finals\FinalExam\FinalExam\obj\Debug\netstandard2.1\ref\FinalExam.dll
+C:\Users\russ\source\repos\PDC03_Finals\FinalExam\FinalExam\obj\Debug\netstandard2.1\View\CustomPopupPage.xaml.g.cs

@@ -11,11 +11,11 @@
                    WidthRequest="450"
                    VerticalOptions="Start"
                    HorizontalOptions="Start"/>
-            <Image Margin="17, -100, 0, 0"
+            <Image Margin="17, -80, 0, 0"
                    WidthRequest="300"
                    HorizontalOptions="Center"
                    Source="information.png"/>
-            <Grid Margin="15, 10, 0, 0">
+            <Grid Margin="20, 40, 0, 0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width=".8*"/>
                     <ColumnDefinition Width="*"/>
@@ -45,14 +45,15 @@
             </Grid>
 
             <AbsoluteLayout>
-                <Button Margin="220, 50, 0, 0"
+                <Button Margin="110, 50, 0, 0"
                     Text="BACK"
                     TextColor="White"
                     FontAttributes="Bold"
-                    FontSize="12"
+                    FontSize="14"
                     HorizontalOptions="Center"
-                    WidthRequest="100"
-                    HeightRequest="35"
+                    VerticalOptions="Center"
+                    WidthRequest="130"
+                    HeightRequest="37"
                     CornerRadius="25"
                     BackgroundColor="White"
                     Clicked="Back">
